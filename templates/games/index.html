@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% if game_list %}
+    {% for game in game_list %}
+        <div class = "ansi-black-bg">
+            <ul>
+                <li><a href="{% url 'games:detail' game.id %}">{{ game.name }}</a></li>
+            </ul>
+        </div>
+
+    {% endfor %}
+
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+<a href="{% url 'games:create' %}">大会を作成する</a>
+
+</body>
+</html>

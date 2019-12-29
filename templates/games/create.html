@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="{% url 'games:result' %}" method="post">
+        {% csrf_token %}
+        <li><input type="text" name="code" ></li>
+        <li><input type="text" name="name" ></li>
+        <li><select name="num_people">
+            <option value="4">4</option>
+            <option value="8">8</option>
+            <option value="16">16</option>
+        </select></li>
+        <li><input type="textarea" name="outline" ></li>
+        <li><input type="submit" value="作成"></li>
+    </form>
+
+</body>
+</html>
