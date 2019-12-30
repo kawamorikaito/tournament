@@ -7,3 +7,6 @@ class Game(models.Model):
     num_people = models.IntegerField(default=0)
     start_time = models.DateTimeField(default=timezone.now)
     outline = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
