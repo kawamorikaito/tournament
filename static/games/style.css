@@ -1,0 +1,35 @@
+header{
+    background-color: cornflowerblue;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    line-height: 90px;
+}
+
+header li{
+	float: left;
+    list-style: none;
+	padding:0 50px;
+}
+
+header nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Amatic SC', cursive;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+header nav ul li:hover{
+	color: coral;
+}
+
+.logo{
+    float: left;
+    padding: 16px 15px 0px 15px;
+}

@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'games/style.css' %}">
+
+    <style>
+        body{
+            margin: 0 auto;
+        }
+    </style>
 </head>
 <body>
 
-<hedder>
+
+<header>
     <div class="logo">
-        <img>
+        <a href="{% url 'games:index' %}">
+            <img src="{% static 'games/logo.png' %}">
+        </a>
     </div>
 
-    <div>
-
-</hedder>
+    <nav>
+        <ul>
+            <li><a href="{% url 'games:index' %}">マイページ</li>
+        </ul>
+    </nav>
+</header>
 
 {% if game_list %}
     {% for game in game_list %}
