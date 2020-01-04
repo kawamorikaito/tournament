@@ -1,22 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <form action="{% url 'games:result' %}" method="post">
+{% extends 'base/base.html' %}
+
+{% block content %}
+
+    <h2>大会を開催する</h2>
+
+
+    <form action="{% url 'games:result' %}" method="post" class="create_game">
         {% csrf_token %}
-        <li><input type="text" name="code" ></li>
-        <li><input type="text" name="name" ></li>
-        <li><select name="num_people">
-            <option value="4">4</option>
-            <option value="8">8</option>
-            <option value="16">16</option>
-        </select></li>
-        <li><input type="textarea" name="outline" ></li>
-        <li><input type="submit" value="作成"></li>
+
+        <div class="input_component">
+            <input class="under_line" type="text" placeholder=" " required>
+            <label>大会名</label>
+            <span class="focus_line"></span>
+        </div>
+
+        <div class="input_component">
+            <select class="under_line" name="num_people" required>
+                <option value="4">4</option>
+                <option value="8">8</option>
+                <option value="16">16</option>
+            </select>
+            <p>参加人数</p>
+            <span class="focus_line"></span>
+        </div>
+
+        <div class="start_time">
+            <div class="input_component">
+            <input type="text"  class="input_calendar under_line" required>
+            <p>開催期間</p>
+            <span class="focus_line"></span>
+            </div>
+        </div>
+
+        <div class="period">
+            <p>~</p>
+        </div>
+
+        <div class="input_component">
+            <input type="text"  class="input_calendar under_line" required>
+            <p>開催期間</p>
+            <span class="focus_line"></span>
+        </div>
+
+        <div class="input_component">
+            <textarea class="under_line" id="textarea" placeholder="" required></textarea>
+            <label>説明</label>
+            <span class="focus_line"></span>
+        </div>
+
+        <input type="submit" class="regist_btn" value="作成する"></li>
     </form>
 
-</body>
-</html>
+
+{% endblock %}

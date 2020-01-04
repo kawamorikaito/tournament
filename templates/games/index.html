@@ -1,34 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
 
-    {% load static %}
-    <link rel="stylesheet" type="text/css" href="{% static 'games/style.css' %}">
+{% extends 'base/base.html' %}
 
-    <style>
-        body{
-            margin: 0 auto;
-        }
-    </style>
-</head>
-<body>
-
-
-<header>
-    <div class="logo">
-        <a href="{% url 'games:index' %}">
-            <img src="{% static 'games/logo.png' %}">
-        </a>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="{% url 'games:index' %}">マイページ</li>
-        </ul>
-    </nav>
-</header>
+{% block content %}
 
 {% if game_list %}
     {% for game in game_list %}
@@ -46,5 +19,4 @@
 
 <a href="{% url 'games:create' %}">大会を作成する</a>
 
-</body>
-</html>
+{% endblock %}

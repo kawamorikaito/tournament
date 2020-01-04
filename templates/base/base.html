@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>トーナメント</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'games/style.css' %}">
+
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flatpickr/dist/themes/material_blue.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <style>
+        body{
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+
+<header>
+    <div class="logo">
+        <a href="{% url 'games:index' %}">
+            <img src="{% static 'games/logo.png' %}">
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'games:index' %}">マイページ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="side_ber">
+        <ul>
+            <li><a href="#">大会を開催する</a></li>
+            <li><a href="#">大会に参加する</a></li>
+            <li><a href="#">過去の大会を見る</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+
+    {% block content %}
+    {% endblock %}
+
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+<script>
+    flatpickr.localize(flatpickr.l10ns.ja);
+    flatpickr('.input_calendar');
+</script>
+<script>
+    flatpickr.localize(flatpickr.l10ns.ja);
+    flatpickr('.input_calendar', {
+        enableTime: true
+    });
+</script>
+
+<script>
+    $(function() {
+        var $textarea = $('#textarea');
+        var lineHeight = parseInt($textarea.css('lineHeight'));
+        $textarea.on('input', function(evt) {
+            var lines = ($(this).val() + '\n').match(/\n/g).length;
+            $(this).height(lineHeight * lines);
+        });
+    });
+</script>
+
+</body>
+</html>
