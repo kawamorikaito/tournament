@@ -3,20 +3,30 @@
 
 {% block content %}
 
+<h2>参加中の大会一覧</h2>
+
 {% if game_list %}
     {% for game in game_list %}
-        <div class = "ansi-black-bg">
-            <ul>
-                <li><a href="{% url 'games:detail' game.id %}">{{ game.name }}</a></li>
-            </ul>
+        <div class = "game_list">
+            <a href="{% url 'games:detail' game.id %}">
+                <div class="list_hedder">
+                    <p>{{ game.name }}</p>
+                </div>
+                <div class="list_img">
+                    <img src="http://placehold.jp/300x200.png">
+                </div>
+
+                <div class="list_body">
+                    <p>開催日時：{{ game.game_start_time|date:"Y-n-j H:i" }}</p>
+                    <p>ゲーム　：{{ game.game_name }}</p>
+                </div>
+            </a>
         </div>
 
     {% endfor %}
 
 {% else %}
-    <p>No polls are available.</p>
+    <p>参加中の大会はありません。</p>
 {% endif %}
-
-<a href="{% url 'games:create' %}">大会を作成する</a>
 
 {% endblock %}

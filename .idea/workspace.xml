@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc1d598-9491-414f-82ed-ef29b7592d74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/migrations/0002_game_status.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/games/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/games/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/games/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/games/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/games/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/games/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/games/create.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/games/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/games/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/games/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/games/index.html" afterDir="false" />
@@ -104,7 +107,7 @@
       <updated>1577453042793</updated>
       <workItem from="1577453065422" duration="709000" />
       <workItem from="1577551988723" duration="11906000" />
-      <workItem from="1577924656109" duration="21144000" />
+      <workItem from="1577924656109" duration="30763000" />
     </task>
     <servers />
   </component>
@@ -112,30 +115,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1578124556013">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1578232960332">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578124556013" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1578124556012">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1578232960332" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1578232960330">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578124556012" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1578124556011">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1578232960330" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1578232960329">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578124556011" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1578124556013">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1578232960329" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1578232960331">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578124556013" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1578232960331" />
     <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1577924677902">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1577924677902" />
-    <state x="301" y="180" width="837" height="540" key="find.popup" timestamp="1578063820587">
+    <state x="288" y="198" width="837" height="540" key="find.popup" timestamp="1578188986813">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="301" y="180" width="837" height="540" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1578063820587" />
+    <state x="288" y="198" width="837" height="540" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1578188986813" />
     <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1578122273842">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

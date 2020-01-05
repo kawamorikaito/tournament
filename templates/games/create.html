@@ -9,7 +9,7 @@
         {% csrf_token %}
 
         <div class="input_component">
-            <input class="under_line" type="text" placeholder=" " required>
+            <input class="under_line" type="text" name="name" placeholder=" " required>
             <label>大会名</label>
             <span class="focus_line"></span>
         </div>
@@ -24,28 +24,65 @@
             <span class="focus_line"></span>
         </div>
 
-        <div class="start_time">
-            <div class="input_component">
-            <input type="text"  class="input_calendar under_line" required>
-            <p>開催期間</p>
+        <div class="input_component">
+            <input class="under_line" type="text" name="game_name" placeholder=" " required>
+            <label>ゲーム</label>
             <span class="focus_line"></span>
+        </div>
+
+
+        <div class="input_component">
+            <textarea class="under_line" id="textarea" name="outline" placeholder=" " required></textarea>
+            <label>説明</label>
+            <span class="focus_line"></span>
+        </div>
+
+        <h3>期間設定</h3>
+
+        <div class="time">
+            <div class="time_component">
+                <div class="input_component">
+                <input type="text" class="input_calendar under_line" name="reception_start_time" placeholder="2020-01-05 12:00" required>
+                <p>受付開始期間</p>
+                <span class="focus_line"></span>
+                </div>
+            </div>
+
+            <div class="period">
+                <p>~</p>
+            </div>
+
+            <div class="time_component">
+                <div class="input_component">
+                <input type="text" class="input_calendar under_line" name="reception_end_time" placeholder="2020-01-05 12:00" required>
+                <p>受付締切期間</p>
+                <span class="focus_line"></span>
+                </div>
             </div>
         </div>
 
-        <div class="period">
-            <p>~</p>
-        </div>
 
-        <div class="input_component">
-            <input type="text"  class="input_calendar under_line" required>
-            <p>開催期間</p>
-            <span class="focus_line"></span>
-        </div>
 
-        <div class="input_component">
-            <textarea class="under_line" id="textarea" placeholder="" required></textarea>
-            <label>説明</label>
-            <span class="focus_line"></span>
+        <div class="time">
+            <div class="time_component">
+                <div class="input_component">
+                <input type="text"  class="input_calendar under_line" name="game_start_time" placeholder="2020-01-05 12:00" required>
+                <p>大会開始時間</p>
+                <span class="focus_line"></span>
+                </div>
+            </div>
+
+            <div class="period">
+                <p>~</p>
+            </div>
+
+            <div class="time_component">
+                <div class="input_component">
+                <input type="text"  class="input_calendar under_line" name="game_end_time" placeholder="2020-01-05 12:00" required>
+                <p>予定終了時刻</p>
+                <span class="focus_line"></span>
+                </div>
+            </div>
         </div>
 
         <input type="submit" class="regist_btn" value="作成する"></li>
