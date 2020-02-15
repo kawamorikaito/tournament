@@ -3,10 +3,14 @@
 {% block content %}
     <h2>{{ game.name }}</h2>
 
+    <div class="main_detail">
     <ul>
         <li>名前：{{ game.name }}</li>
         <li>人数：{{ game.num_people }}</li>
         <li>説明：{{ game.outline }}</li>
     </ul>
+    </div>
+
+    <div class="participant_list">
 
 {% endblock %}

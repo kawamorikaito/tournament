@@ -29,4 +29,11 @@
     <p>参加中の大会はありません。</p>
 {% endif %}
 
+    <div>
+    <a class="btn btn-block btn-social btn-twitter"
+       href='{% url 'social:begin' 'twitter' %}'>
+      <span class="fa fa-twitter"></span>Twitterでログイン
+    </a>
+    </div>
+
 {% endblock %}

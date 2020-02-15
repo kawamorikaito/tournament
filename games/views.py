@@ -15,7 +15,6 @@ def index(request):
     }
     return HttpResponse(template.render(context, request))
 
-
 def create(request):
     template = loader.get_template('games/create.html')
 
