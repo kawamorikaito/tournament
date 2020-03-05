@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6dc1d598-9491-414f-82ed-ef29b7592d74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/accounts/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tournament/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/games/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/games/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tournament/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tournament/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_auth/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_auth/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_auth/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_auth/migrations/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/migrations/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_auth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_auth/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_auth/urls.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user_auth/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/participations/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/participations/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,6 +104,7 @@
       <workItem from="1578758209768" duration="2917000" />
       <workItem from="1579411930533" duration="160000" />
       <workItem from="1581776583187" duration="158000" />
+      <workItem from="1583418245731" duration="251000" />
     </task>
     <servers />
   </component>
@@ -126,26 +116,26 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="144" y="79" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1582754278656" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1582755938677">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1583160792404">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1582755938677" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1582755938675">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1583160792404" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1583160792402">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1582755938675" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1582755938673">
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1583160792402" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1583160792401">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1582755938673" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1582755938676">
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1583160792401" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1583160792402">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1582755938676" />
-    <state x="480" y="168" key="RollbackChangesDialog" timestamp="1582754280857">
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1583160792402" />
+    <state x="480" y="168" key="RollbackChangesDialog" timestamp="1583418425460">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="480" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1582754280857" />
+    <state x="480" y="168" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1583418425460" />
     <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1579411930524">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
