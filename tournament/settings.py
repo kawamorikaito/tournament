@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'games.apps.GamesConfig',
+    'participations.apps.ParticipationsConfig',
     'django.contrib.sites',  # 追加
     'allauth',  # 追加
     'allauth.account',  # 追加
