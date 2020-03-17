@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'games.apps.GamesConfig',
+    'participations.apps.ParticipationsConfig',
     'django.contrib.sites',  # 追加
     'allauth',  # 追加
     'allauth.account',  # 追加
@@ -60,8 +61,7 @@ ROOT_URLCONF = 'tournament.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

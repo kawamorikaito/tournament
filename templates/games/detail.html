@@ -12,5 +12,7 @@
     </div>
 
     <div class="participant_list">
-
+        <form action="{% url 'participations:create' %}" method="post" class="create_game">
+            {% csrf_token %}
+            <button class="regist_btn" >送信</button></form></div>
 {% endblock %}

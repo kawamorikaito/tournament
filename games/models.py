@@ -10,7 +10,7 @@ class Game(models.Model):
     reception_end_time = models.DateTimeField(default=timezone.now)
     game_start_time = models.DateTimeField(default=timezone.now)
     game_end_time = models.DateTimeField(default=timezone.now)
-    outline = models.CharField(max_length=50)
+    outline = models.CharField(max_length=50, null=True)
     status = models.IntegerField(default=0)
 
     def __str__(self):
